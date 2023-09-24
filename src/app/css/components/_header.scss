@@ -1,0 +1,28 @@
+
+header {
+    display: flex;
+    margin: auto;
+    padding-top: 66px;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    nav{
+        display: flex;
+        width: 158px;
+        justify-content: center;
+        gap: 33px;       
+        
+    }
+
+    .navRight{
+        justify-content: right;
+    }
+
+    #logo {
+        width: 215px;
+        height: auto;
+        align-self: center;
+
+    }
+}

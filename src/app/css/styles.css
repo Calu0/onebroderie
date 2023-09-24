@@ -3,7 +3,6 @@ body {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 0px 100px;
 }
 
 header {
@@ -26,4 +25,4 @@ header #logo {
   width: 215px;
   height: auto;
   align-self: center;
-}/*# sourceMappingURL=globals.css.map */
+}/*# sourceMappingURL=styles.css.map */
