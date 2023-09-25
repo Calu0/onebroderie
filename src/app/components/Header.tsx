@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo.png'
 import Image from 'next/image'
+import Link from 'next/link'
 import "../page.module.css";
 import { FaRegHeart, FaRegEnvelope } from 'react-icons/fa';
 
@@ -9,14 +10,22 @@ import { FaRegHeart, FaRegEnvelope } from 'react-icons/fa';
 const header = () => {
   return (
     <header>
-      <nav className='navLeft'>
-        <p>Accueil</p>
-        <p>Catalogue</p>
+      <nav id='navLeft'>
+      <Link href='/'className='navTxt'>
+        Accueil
+      </Link>
+      <Link href='/catalogue'className='navTxt'>
+        Catalogue
+      </Link>
       </nav>
       <Image src={logo} alt="logo" id='logo' />
-      <nav className='navRight'>
-        <FaRegHeart/>
-        <FaRegEnvelope/>   
+      <nav id='navRight'>
+      <Link href='/favlist' className='navIcon'>
+        <FaRegHeart size={18}/>
+      </Link>
+      <Link href='/contact' className='navIcon'>
+        <FaRegEnvelope size={18}/>   
+      </Link>
       </nav>
     </header>
 

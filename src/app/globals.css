@@ -9,21 +9,52 @@ body {
 header {
   display: flex;
   margin: auto;
-  padding-top: 66px;
+  padding-top: 50px;
   align-items: center;
   justify-content: space-between;
 }
+header a {
+  text-decoration: none;
+  color: #333333;
+}
 header nav {
   display: flex;
-  width: 158px;
-  justify-content: center;
-  gap: 33px;
+  max-width: 180px;
+  width: 100%;
+  align-items: center;
+  gap: 40px;
 }
-header .navRight {
+header #navLeft {
+  justify-content: left;
+}
+header #navRight {
   justify-content: right;
 }
 header #logo {
-  width: 215px;
+  max-width: 215px;
+  width: 100%;
   height: auto;
   align-self: center;
+}
+header .navTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .navTxt::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #333333;
+  width: 0;
+  transform: translateY(5px);
+  transition: width 0.1s;
+}
+header .navTxt:hover::after {
+  width: 130%;
+}
+header .navIcon:hover {
+  transform: scale(1.15);
+  transition: transform 0.1s;
 }/*# sourceMappingURL=globals.css.map */

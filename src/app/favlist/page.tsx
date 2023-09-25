@@ -4,7 +4,7 @@ import React from 'react'
 import Header from '../components/Header'
 
 
-const page = () => {
+const favlist = () => {
   return (
   <div>
     <Header />
@@ -12,4 +12,4 @@ const page = () => {
   )
 }
 
-export default page
+export default favlist

@@ -1,28 +1,70 @@
-
 header {
     display: flex;
     margin: auto;
-    padding-top: 66px;
+    padding-top: 50px;
     align-items: center;
     justify-content: space-between;
-    
 
-    nav{
-        display: flex;
-        width: 158px;
-        justify-content: center;
-        gap: 33px;       
-        
+
+    a {
+        text-decoration: none;
+        color: #333333;
+
     }
 
-    .navRight{
+    nav {
+        display: flex;
+        max-width: 180px;
+        width: 100%;
+        align-items: center;
+        gap: 40px;
+
+    }
+
+    #navLeft {
+        justify-content: left;
+    }
+
+    #navRight {
         justify-content: right;
     }
 
     #logo {
-        width: 215px;
+        max-width: 215px;
+        width: 100%;
         height: auto;
         align-self: center;
 
+    }
+
+
+    .navTxt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navTxt::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background: #333333;
+        width: 0;
+        transform: translateY(5px);
+        transition: width .1s;
+
+    }
+
+    .navTxt:hover::after {
+        width: 130%;
+
+    }
+
+    .navIcon {
+        &:hover {
+            transform: scale(1.15);
+            transition: transform 0.1s;
+        }
     }
 }
